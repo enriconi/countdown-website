@@ -1,6 +1,6 @@
 import Countdown from './countdown.js';
 
-const mariaBirthdayDiff = new Countdown('11 March 2023 23:59:59 GMT-0300');
+const mariaBirthdayDiff = new Countdown('08 March 2023 23:59:59 GMT-0300');
 
 setInterval(() => {
   days.innerText = mariaBirthdayDiff.total.days;
