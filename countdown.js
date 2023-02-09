@@ -32,10 +32,10 @@ export default class Countdown {
   }
 
   get total() {
-    const days = this.days;
-    const hours = this.hours % 24;
-    const minutes = this.minutes % 60;
-    const seconds = this.seconds % 60;
+    const days = formatDate(this.days);
+    const hours = formatDate(this.hours % 24);
+    const minutes = formatDate(this.minutes % 60);
+    const seconds = formatDate(this.seconds % 60);
 
     return {
       days,
@@ -45,3 +45,8 @@ export default class Countdown {
     };
   }
 }
+
+const formatDate = (date) => {
+  if (date < 10) return '0' + date;
+  return date;
+};
