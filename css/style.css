@@ -14,6 +14,8 @@ p {
 
 .container {
   display: flex;
+  padding: 20px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #202024;
@@ -61,4 +63,12 @@ input::-webkit-calendar-picker-indicator {
   position: relative;
   margin-left: 8px;
   top: 2px;
+}
+
+body.dark-theme {
+  background-color: #FFF;
+}
+
+.timer div.dark-theme, input.dark-theme {
+  color: #202024;
 }
