@@ -20,7 +20,6 @@ p {
 }
 
 .timer {
-  height: 100vh;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -36,4 +35,13 @@ p {
 
   background: #29292E;
   border-radius: 8px;
+}
+
+.principal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
