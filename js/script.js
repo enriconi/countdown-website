@@ -26,3 +26,15 @@ btn.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
   selectedDate.classList.toggle('dark-theme');
 });
+
+window.addEventListener('load', () => {
+  const currentData = new Date();
+
+  currentData.setMinutes(
+    currentData.getMinutes() - currentData.getTimezoneOffset(),
+  );
+  currentData.setMilliseconds(null);
+  currentData.setSeconds(null);
+
+  selectedDate.value = currentData.toISOString().slice(0, -1);
+});

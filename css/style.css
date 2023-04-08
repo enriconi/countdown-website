@@ -12,6 +12,12 @@ p {
   padding: 0px;
 }
 
+input,
+button,
+input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   padding: 20px;
