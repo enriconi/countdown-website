@@ -72,3 +72,7 @@ body.dark-theme {
 .timer div.dark-theme, input.dark-theme {
   color: #202024;
 }
+
+input.dark-theme::-webkit-calendar-picker-indicator {
+  filter: brightness(1) invert(0);
+}
