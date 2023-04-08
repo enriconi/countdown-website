@@ -38,3 +38,19 @@ window.addEventListener('load', () => {
 
   selectedDate.value = currentData.toISOString().slice(0, -1);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (selectedDate.value !== '') {
+    console.log('A data já está preenchida!');
+  } else {
+    const days = document.querySelector('#days');
+    const hours = document.querySelector('#hours');
+    const minutes = document.querySelector('#minutes');
+    const seconds = document.querySelector('#seconds');
+
+    days.innerText = '00';
+    hours.innerText = '00';
+    minutes.innerText = '00';
+    seconds.innerText = '00';
+  }
+});
