@@ -6,7 +6,7 @@ Site para fazer contagem regressiva da data que o usuário selecionar! 😁
 
 Algumas melhorias que planejo para o sistema posteriormente:
 
-- [ ] Finalizar mudança de tema claro/escuro;
+- [x] Finalizar mudança de tema claro/escuro;
 - [ ] Finalizar o README;
 - [ ] Adicionar suporte para o inglês;
 - [ ] Ajustar responsivo;

@@ -1,6 +1,7 @@
 import Countdown from './modules/countdown.js';
 
 const selectedDate = document.querySelector('#selectedDate');
+const timer = document.querySelector('.timer');
 
 const changeDate = () => {
   const timeDiff = new Countdown(new Date(selectedDate.value));
@@ -25,6 +26,8 @@ const btn = document.querySelector('.btn-toggle');
 btn.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
   selectedDate.classList.toggle('dark-theme');
+  timer.classList.toggle('dark-theme');
+  btn.classList.toggle('dark-theme');
 });
 
 window.addEventListener('load', () => {
