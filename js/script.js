@@ -33,18 +33,6 @@ btn.addEventListener('click', () => {
   btn.classList.toggle('dark-theme');
 });
 
-window.addEventListener('load', () => {
-  const currentData = new Date();
-
-  currentData.setMinutes(
-    currentData.getMinutes() - currentData.getTimezoneOffset(),
-  );
-  currentData.setMilliseconds(null);
-  currentData.setSeconds(null);
-
-  selectedDate.value = currentData.toISOString().slice(0, -1);
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   if (selectedDate.value !== '') {
     console.log('A data já está preenchida!');
@@ -60,3 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     seconds.innerText = '--';
   }
 });
+
+const now = new Date();
+const nowFormatted = now.toISOString().slice(0, 16);
+selectedDate.min = nowFormatted;
