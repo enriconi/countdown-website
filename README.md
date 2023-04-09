@@ -11,4 +11,4 @@ Algumas melhorias que planejo para o sistema posteriormente:
 - [ ] Adicionar suporte para o inglês;
 - [ ] Ajustar responsivo;
 - [x] Fazer validações no input (colocar o min p/ data atual);
-- [ ] Ajustar bug de trocar de data.
+- [x] Ajustar bug de trocar de data.

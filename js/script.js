@@ -2,6 +2,7 @@ import Countdown from './modules/countdown.js';
 
 const selectedDate = document.querySelector('#selectedDate');
 const timer = document.querySelector('.timer');
+let countdownInterval;
 
 const changeDate = () => {
   const timeDiff = new Countdown(new Date(selectedDate.value));
@@ -11,7 +12,9 @@ const changeDate = () => {
   const minutes = document.querySelector('#minutes');
   const seconds = document.querySelector('#seconds');
 
-  setInterval(() => {
+  clearInterval(countdownInterval);
+
+  countdownInterval = setInterval(() => {
     days.innerText = timeDiff.total.days;
     hours.innerText = timeDiff.total.hours;
     minutes.innerText = timeDiff.total.minutes;
