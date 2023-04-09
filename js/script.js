@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const minutes = document.querySelector('#minutes');
     const seconds = document.querySelector('#seconds');
 
-    days.innerText = '00';
-    hours.innerText = '00';
-    minutes.innerText = '00';
-    seconds.innerText = '00';
+    days.innerText = '--';
+    hours.innerText = '--';
+    minutes.innerText = '--';
+    seconds.innerText = '--';
   }
 });

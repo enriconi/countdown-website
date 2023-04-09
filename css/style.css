@@ -30,7 +30,6 @@ input::-webkit-calendar-picker-indicator {
 .timer {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   align-items: center;
 }
 
@@ -43,6 +42,13 @@ input::-webkit-calendar-picker-indicator {
 
   background: #1E272E;
   border-radius: 8px;
+}
+
+.timer p {
+  font-size: 8.75vw;
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+  color: #FFF;
 }
 
 .principal {
@@ -86,6 +92,10 @@ input.dark-theme::-webkit-calendar-picker-indicator {
 .timer.dark-theme div {
   color: #37474F;
   background: #dee4e7;
+}
+
+.timer.dark-theme p {
+  color: #37474F;
 }
 
 .btn-toggle {
