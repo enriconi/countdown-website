@@ -136,3 +136,23 @@ input.dark-theme::-webkit-calendar-picker-indicator {
 .btn-toggle:focus-visible {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 1024px) {
+  input {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    font-size: 6vw;
+  }
+
+  .timer div {
+    font-size: 7.25vw;
+    padding: 30px 20px;
+  
+    background: #1E272E;
+    border-radius: 8px;
+  }
+}
